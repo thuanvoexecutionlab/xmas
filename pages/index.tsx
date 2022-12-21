@@ -8,34 +8,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <NextSeo
-        title="Ryan App"
-        description="Product Management"
-        canonical="https://www.canonical.ie/"
-        openGraph={{
-          url: "https://my-next-app-six-psi.vercel.app/",
-          title: "Ryan App",
-          description: "Product Management",
-          images: [
-            {
-              url: "/avatar.png",
-              width: 800,
-              height: 600,
-              alt: "Image Alt",
-            },
-            {
-              url: "/avatar.png",
-              width: 900,
-              height: 800,
-              alt: "Image Alt",
-            },
-          ],
-          site_name: "Ryan App",
-        }}
-        twitter={{
-          handle: "@handle",
-          site: "@site",
-          cardType: "summary_large_image",
-        }}
+        title="Merry Xmas"
       />
 
       <main className={styles.main}>
