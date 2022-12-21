@@ -1,0 +1,53 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex: 1;
+}
+
+.btn {
+  color: #191919;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  min-width: 200px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #c6c6c6;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+  margin-top: 2vh;
+}
+
+.btn:hover {
+  border: 2px solid #d10000;
+  color: #d10000;
+}
+
+.btn:active {
+  border: 2px solid #d10000;
+  color: #d10000;
+}
+
+.text {
+  color: #191919;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-top: 2vh;
+  padding: 0px 40px;
+  text-align: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  .btn {
+    color: #ffffff;
+  }
+  .text {
+    color: #ffffff;
+  }
+}
