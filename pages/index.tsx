@@ -10,7 +10,6 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <NextSeo title="Merry Christmas" />
-
       <main className={styles.main}>
         <h1 className={styles.title}>
           Merry <span>Christmas</span>
