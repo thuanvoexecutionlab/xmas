@@ -2,52 +2,31 @@ import { NextSeo } from "next-seo";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
+  const [password, setPassword] = useState("");
   return (
     <div className={styles.container}>
-      <NextSeo
-        title="Ryan App"
-        description="Product Management"
-        canonical="https://www.canonical.ie/"
-        openGraph={{
-          url: "https://my-next-app-six-psi.vercel.app/",
-          title: "Ryan App",
-          description: "Product Management",
-          images: [
-            {
-              url: "/avatar.png",
-              width: 800,
-              height: 600,
-              alt: "Image Alt",
-            },
-            {
-              url: "/avatar.png",
-              width: 900,
-              height: 800,
-              alt: "Image Alt",
-            },
-          ],
-          site_name: "Ryan App",
-        }}
-        twitter={{
-          handle: "@handle",
-          site: "@site",
-          cardType: "summary_large_image",
-        }}
-      />
+      <NextSeo title="Merry Christmas" />
 
       <main className={styles.main}>
         <h1 className={styles.title}>
           Merry <span>Christmas</span>
         </h1>
-
+        <input
+          className={styles.input}
+          type="password"
+          placeholder="Enter your password"
+          defaultValue={password}
+          onChange={(e) => {
+            setPassword(e.target.value);
+          }}
+        />
         <div className={styles.grid}>
           <Link
-            href={{
-              pathname: "/start",
-            }}
+            href={password === "password" ? "/start" : "/"}
             className={styles.card}
           >
             <h2>Your gift is here</h2>
