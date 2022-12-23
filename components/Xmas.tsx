@@ -39,7 +39,7 @@ export default function Xmas() {
 
   const handleChange = () => {
     if (index === wishes.length - 1) {
-      route.push("/gift");
+      route.push("/gift1");
     }
     if (index === wishes.length - 2) {
       setBtn("Your gift 🎁");
