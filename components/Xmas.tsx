@@ -8,12 +8,21 @@ export interface IXmasProps {}
 const wishes = [
   "Bạn biết không?",
   "Tôi không biết bạn là ai",
-  "Tôi đã chuẩn bị món quà hữu hình cho bạn",
-  "Nhưng mà nó chưa được ship tới 😢",
-  "Vì thế nên đây là món quà nhỏ của tôi",
-  "Trong lúc bạn chờ đợi món kia đến",
+  "Tôi đã chuẩn bị món quà này cho bạn",
+  "Mong bạn sẽ thấy nó đặc biệt 🤣",
+  "Vì đây thật sự chưa phải là món quà mà tôi muốn tặng bạn",
+  "Thật ra tôi muốn tặng bạn một cái gì đó khác",
+  "Đố bạn biết? 🤔",
+  "Đoán đi đã...",
+  "Đoán ra chưa?",
+  "Sai rồi ❌",
+  "Thôi không nhây nữa",
+  "Chắc phải cho bạn biết nó là gì rồi 😅",
+  "Nó là...",
   "À mà quên",
-  "Noel vui vẻ nhớ 😃",
+  "Trước khi tôi nói ra nó là gì",
+  "Thì tôi muốn nói một câu",
+  "Noel ấm áp bợn nhớ 😃",
 ];
 
 export default function Xmas() {
@@ -30,7 +39,7 @@ export default function Xmas() {
 
   const handleChange = () => {
     if (index === wishes.length - 1) {
-      route.push("/gift");
+      route.push("/gift1");
     }
     if (index === wishes.length - 2) {
       setBtn("Your gift 🎁");

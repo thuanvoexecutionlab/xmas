@@ -1,10 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useSpring, animated } from "@react-spring/web";
 import styles from "./Gift.module.css";
-import { Facebook, Phone } from "react-feather";
 import Link from "next/link";
+import { Facebook, Phone } from "react-feather";
 
 export default function GiftPage() {
   const [props, api] = useSpring(
@@ -29,17 +29,14 @@ export default function GiftPage() {
           width={300}
           height={300}
         />
-        <Image
-          className={styles.img}
-          src={"/images/gift2.png"}
-          alt={""}
-          width={300}
-          height={300}
-        />
         <h2 className={styles.text}>
-          Liên hệ với thuan.vo để nhận quà trước ngày 1/1 nhá
+          Tén tèn 🎉🎉🎉
+          <br />
+          <br />
+          Vì lí do vận chuyển nên món qua của bạn đang bị vướng lại ở kho hàng
+          <br /> Quà của bạn sẽ đến tận tay sớm nhất có thể nhá 💚
         </h2>
-        <footer className={styles.footer}>
+        {/* <footer className={styles.footer}>
           <Link
             className={styles.link}
             href="https://www.facebook.com/ryan.vo.0106/"
@@ -58,7 +55,7 @@ export default function GiftPage() {
             <Phone />
             <span>0938.033.495</span>
           </Link>
-        </footer>
+        </footer> */}
         <Image
           src="/images/christmas-tree.png"
           alt="bg"
