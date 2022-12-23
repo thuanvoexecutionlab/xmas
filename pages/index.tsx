@@ -25,7 +25,7 @@ export default function Home() {
         />
         <div className={styles.grid}>
           <Link
-            href={password === "password" ? "/start" : "/"}
+            href={password === "password" ? "/start1" : "/"}
             className={styles.card}
           >
             <h2>Your gift is here</h2>
